@@ -1,0 +1,353 @@
+
+
+body{
+    box-sizing: border-box;
+}
+.video1{
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+.video1 video
+ {
+    width: 90%;
+    height: 70vh;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.title p{
+    font-size: 2rem;
+    /* line-height: 42px; */
+    /* max-width: 384px; */
+    text-align: center;
+    font-family: Schnyder M Web, sans-serif;
+
+}
+
+.Top-category{
+    display:flex ;
+    gap: 1rem;
+    overflow: auto;
+    justify-content: space-evenly;
+}
+.Top-category .cards img{
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+}
+img:hover{
+    cursor:grabbing;
+}
+
+/* must have */
+.MustHave{
+    display:flex ;
+    gap: 1rem;
+    overflow: auto;
+    justify-content: space-evenly;
+    padding: 15px;
+    width: 85%;
+    margin: auto;
+    /* scrollbar-width: none; */
+}
+/* .MustHave::-webkit-scrollbar{
+    display:none;
+} */
+
+.MustHave .cards img{
+width: 250px;
+    height: 250px;
+    border-radius: 10px;
+}
+.material-symbols-outlined{
+    position: relative;
+    left: 180px;
+}
+.offer{
+    background: linear-gradient(to right, rgb(137, 131, 123), rgb(227, 144, 26));
+    width: 50%;
+}
+
+/* <section class="slider"> */
+.slider{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    
+    /* background-color: #f7f7f7; */
+}
+.carousel {
+    width: 90%;
+    overflow: hidden;
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease;
+    width: 100%;
+}
+
+.slide {
+    min-width: 90vw;
+    width: 90%; /* Adjust as necessary */
+    max-width: 1280px;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.indicators {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.indicator {
+    width: 10px;
+    height: 10px;
+    margin: 0 5px;
+    background-color: #ccc;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.indicator.active {
+    background-color: black;
+}
+
+
+
+ /* section in focus  */
+ .inFocus {
+    display: flex;
+   
+    justify-content: space-between; 
+    align-items: center; 
+    gap: 2rem; 
+    background-color: rgb(247, 247, 247);
+    padding: 2rem;
+}
+
+.inFocus .image-1 {
+    flex: 1; 
+    max-width: 100%; 
+    text-align: center;
+}
+
+.inFocus .image-1 img {
+    max-width: 100%; 
+    /* height: auto;  */
+    /* display: block; */
+}
+
+.inFocus .infocus_content {
+    flex: 1; 
+    max-width: 100%; 
+    padding: 2rem; 
+    text-align: center; 
+}
+
+.inFocus .infocus_content p {
+    font-size: 0.9rem;
+    margin-bottom: 1rem; 
+}
+
+.inFocus .infocus_content pre {
+    font-size: 1.5rem;
+    font-family: 'Schnyder M Web', sans-serif;
+    margin-bottom: 1rem; /* Adjust spacing as needed */
+}
+
+.inFocus .infocus_content a {
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    display: inline-block;
+    margin-top: 1rem; /* Adjust spacing as needed */
+}
+
+
+@media (max-width: 768px) {
+    .inFocus {
+        flex-direction: column; 
+        align-items: center; 
+    }
+
+    .inFocus .image-1,
+    .inFocus .infocus_content {
+        /* flex: none;  */
+        max-width: 100%; 
+        margin-bottom: 2rem; 
+    }
+
+    .inFocus .infocus_content {
+        padding: 1rem; 
+    }
+
+    .inFocus .infocus_content pre {
+        font-size: 1.2rem; 
+    }
+
+    .inFocus .image-1 img {
+        max-width: 70%; 
+        /* height: auto;  */
+        /* display: block; */
+    }
+    
+}
+
+
+
+ /* brands to know  */
+ .brandsToknow{
+    background-color: rgb(252,241,237);
+ }
+ .type_of_brand{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 100vh;
+    align-items: center;
+    overflow: auto;
+
+ }
+ .brands{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+ }
+ .brandsToknow p{
+    text-align: center;
+    position: relative;
+    top: 120px;
+    font-family: PP Object sans, sans-serif;
+    font-size: 24px;
+
+ }
+ .brands img{
+    padding: 1rem;
+    width: 360px;
+    height: 250px;
+    border-radius: 10px;
+ }
+
+ /* center stage */
+ .center-stage{
+    display: flex;
+   height: 100vh;
+    justify-content: space-between; 
+    align-items: center; 
+    gap: 2rem; 
+    background-color: rgb(247, 247, 247);
+    padding: 2rem;
+    
+ }
+ .stage-content{
+    /* width:100%;
+    height: auto;
+    margin-top: auto;
+    margin-bottom: auto; */
+
+    flex: 1; 
+    max-width: 100%; 
+    padding: 2rem; 
+    text-align: center;
+    /* margin-top: 100px; */
+    /* padding: 7rem;
+    padding-left: 8rem; */
+    
+ }
+ .center-stage .stage-image {
+    /* margin-top: auto;
+    margin-bottom: auto;
+    padding: 10rem; */
+
+    flex: 1; 
+    max-width: 100%; 
+    text-align: center;
+   
+ }
+ .center-stage .stage-image img{
+    max-width: 100%;
+   height:auto;
+   border-radius: 10px;
+ }
+ @media (max-width: 768px){
+
+    .center-stage{
+        display: block;
+        height: auto;
+    }
+    .center-stage .stage-image img{
+        max-width: 70%;
+       height:auto;
+      
+     }
+
+ }
+
+
+  /* Tira Tube */
+.Tira-Tube{
+    width: 100%;
+    height: 100vh;
+    
+}
+
+ .Tira-Tube .tira-tube-logo .textandlogo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 32px;
+    margin-left: -120px;
+    
+    
+    
+    
+ }
+ .Tira-tube-video{
+    display: flex;       
+    overflow-y: hidden;      
+    overflow-x: auto;           
+    gap: 10px;                  
+    padding: 10px; 
+ }
+ 
+ .Tira-tube-video video{
+    width: 100%;              
+    height: 400px;
+    object-fit: contain;
+    border-radius: 80px;
+ }
+ .tiravideos {
+    flex: 0 0 auto;            
+    width: 300px;
+    height: 500px;     
+    border-radius: 8px;         
+}
+.tiravideos h3{
+    position: relative;
+    top: -70px;
+    left: 60px;
+}
+.tiravideos span{
+    position: relative;
+    top: -94%;
+    left: -85%;
+}
